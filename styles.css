@@ -1,0 +1,44 @@
+a{
+  color:inherit;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration:underline;
+}
+.bell a:hover{
+  text-decoration:none;
+}
+.bell:hover,.grid:hover{
+  opacity:1;
+}
+nav ul{
+  list-style-type: none;
+  margin: 0; padding: 0;
+  float:right;
+
+}
+nav ul li{
+    display:inline;
+    text-align: center;
+    padding:8px;
+    font-family: arial,sans-serif;
+    opacity: 0.75;
+}
+.name{
+  opacity: 0.55;
+}
+.search{
+  position:absolute;
+  top:50%;
+  left:50%;
+  display:block;
+  text-align: center;
+  margin-top:200px;
+  height:500px;
+  width:500px;
+}
+.logo{
+  background-image:url("https://www.google.ca/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+  height:92px;
+  width:272px;
+}

@@ -27,6 +27,30 @@
 </header>
   <div class="search">
     <div class="logo"></div>
+    <br>
+    <div class="searchbar">
+      <input class="searchtext" type="text" value=""/>
+      <a class="voice"></a>
+    </div>
   </div>
+
+<footer>
+  <div class=""></div>
+  <script>
+  document.getElementById("logo").style.display="none";
+  var textareas = document.getElementsByTagName('searchtext');
+
+    for (i=0;i<textareas.length;i++){
+        if (textareas[i].parentNode.tagName.toString().toLowerCase() == 'div') {
+            textareas[i].onfocus = function(){
+                this.parentNode.style.border-color = 'lightgray';
+            }
+            textareas[i].onblur = function(){
+                this.parentNode.style.border-color = 'lightblue';
+            }
+        }
+    }
+    </script>
+</footer>
   </body>
 </html>

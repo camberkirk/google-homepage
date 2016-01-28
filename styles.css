@@ -1,3 +1,59 @@
+/*
+===============CSS RESET==================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+===============CSS RESET==================
+*/
+html, body {
+    overflow: auto;
+}
+html{
+  min-width: 500px;
+  min-height: 500px;
+}
 a{
   color:inherit;
   text-decoration: none;
@@ -14,13 +70,14 @@ a:hover{
 nav ul{
   list-style-type: none;
   margin: 0; padding: 0;
+  padding-top:5px;
   float:right;
 
 }
 nav ul li{
     display:inline;
     text-align: center;
-    padding:8px;
+    padding:10px;
     font-family: arial,sans-serif;
     opacity: 0.75;
 }
@@ -34,7 +91,7 @@ nav ul li{
   left: 0;
   right: 0;
   width: 100%;
-  height:250px;
+  height:400px;
   margin: auto;
   text-align: center;
 
@@ -49,30 +106,68 @@ nav ul li{
   margin:30px;
   height:33px;
   width:486px;
+  border-style:solid;
+  border-width:1px;
+  border-color:lightgray;
   display:inline-block;
-  position:relative;
 }
 .searchtext{
-  width:100%;
-  height:100%;
-  border:1px solid lightgray;
-  display:block;
-  box-sizing: border-box;
+  float:left;
+  border:none;
+  margin:2px;
+  padding:2px;
+  height:25px;
+  width:450px;
   font-size:16px;
 }
-.searchtext:hover{
+.searchbar:hover{
   border-color:gray;
 }
-.searchtext:focus{
+.searchbar:focus{
   border-color:lightblue;
 }
+input:focus{
+    outline: none;
+}
 .voice{
-  height:30px;
-  width:30px;
-  position:absolute;
-  top:1px;
-  right:0;
-  background-size: 30px 30px;
+  margin-top:3px;
+  height:25px;
+  width:25px;
+  float:right;
+  background-size: 24px 24px;
   background-image:url("mic.png");
-  background-repeat: no-repeat;
+}
+.buttons{
+  display:inline-block;
+  height:30px;
+}
+.searchbutton{
+  height:30px;
+}
+.lucky{
+  height:30px;
+}
+footer{
+  width:100%;
+  height:40px;
+  background-color:lightgray;
+  position:absolute;
+  bottom:10px;
+}
+footer ul{
+padding:10px;
+}
+footer ul li{
+  display:inline;
+  text-align: center;
+  padding:8px;
+  font-family: arial,sans-serif;
+  font-size:14px;
+  opacity: 0.75;
+}
+.footer-left{
+  float:left;
+}
+.footer-right{
+  float:right;
 }
